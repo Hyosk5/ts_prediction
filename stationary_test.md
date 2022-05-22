@@ -57,9 +57,9 @@
      ```python
      from statsmodels.tsa.stattools import kpss
      result = kpss(list_data)
-     print('ADF Statistic: %f' % result[0]) # 통계량
+     print('KPSS Statistic: %f' % result[0]) # 통계량
 	 print('p-value: %f' % result[1])       # p-value 값
-     print('lag: %f' % resykt[2])           # lag 값
+     print('lag: %f' % result[2])           # lag 값
 	 print('Critical Values:')
 	 for key, value in result[3].items():   # 유의 수준에 따른 값
 	 	print('\t%s: %.3f' % (key, value))
